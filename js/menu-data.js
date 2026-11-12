@@ -52,10 +52,10 @@ window.MENU_DATA = {
     {
       id: 'lunch', icon: 'sun', showDesc: true,
       t: {
-        fr: { title: 'Menus du midi', sub: 'Du lundi au vendredi midi uniquement (hors jours fériés)' },
-        en: { title: 'Lunch menus', sub: 'Monday to Friday, lunchtime only (not on public holidays)' },
-        de: { title: 'Mittagsmenüs', sub: 'Nur Montag bis Freitag mittags (nicht an Feiertagen)' },
-        ko: { title: '점심 메뉴', sub: '월~금 점심에만 (공휴일 제외)' }
+        fr: { title: 'Menus du midi', sub: 'Du mardi au vendredi midi uniquement (hors jours fériés)' },
+        en: { title: 'Lunch menus', sub: 'Tuesday to Friday, lunchtime only (not on public holidays)' },
+        de: { title: 'Mittagsmenüs', sub: 'Nur Dienstag bis Freitag mittags (nicht an Feiertagen)' },
+        ko: { title: '점심 메뉴', sub: '화~금 점심에만 (공휴일 제외)' }
       },
       intro: {
         fr: 'Entrée au choix : 3 raviolis grillés (poulet ou légumes) ou 3 crêpes à la ciboulette et aux fruits de mer. Chaque menu est servi avec un bol de riz nature et des petits mets.',
@@ -64,7 +64,7 @@ window.MENU_DATA = {
         ko: '전채 선택: 군만두 3개 (닭고기 또는 야채) 또는 해물파전 3조각. 모든 메뉴는 공기밥과 반찬이 함께 제공됩니다.'
       },
       items: [
-        { id: 'lunch-a', al: ['gluten', 'soy', 'sesame'], num: 'A', name: 'Jeyuk / Dak Bokkeum', ko: '제육볶음 / 닭볶음', price: 15.90, img: 'jeyuk-bokkeum', spicy: 2, rice: true,
+        { id: 'lunch-a', al: ['gluten', 'soy', 'sesame'], num: 'A', name: 'Jeyuk / Dak Bokkeum', ko: '제육볶음 / 닭볶음', price: 16, img: 'jeyuk-bokkeum', spicy: 2, rice: true,
           t: {
             fr: { title: 'Menu A', desc: 'Poitrine de porc ou émincé de poulet sauté à la sauce piquante.' },
             en: { title: 'Menu A', desc: 'Stir-fried pork belly or sliced chicken in spicy sauce.' },
@@ -78,28 +78,28 @@ window.MENU_DATA = {
             de: { title: 'Menü C', desc: 'Tofu-Eintopf.' },
             ko: { title: 'C 메뉴', desc: '두부찌개.' }
           } },
-        { id: 'lunch-d', al: ['soy', 'gluten', 'sesame', 'eggs'], num: 'D', name: 'Yukgaejang', ko: '육개장', price: 17.90, img: 'yukgaejang', spicy: 2, rice: true,
+        { id: 'lunch-d', al: ['soy', 'gluten', 'sesame', 'eggs'], num: 'D', name: 'Yukgaejang', ko: '육개장', price: 18, img: 'yukgaejang', spicy: 2, rice: true,
           t: {
             fr: { title: 'Menu D', desc: 'Ragoût piquant au bœuf.' },
             en: { title: 'Menu D', desc: 'Spicy beef stew.' },
             de: { title: 'Menü D', desc: 'Scharfer Rindfleischeintopf.' },
             ko: { title: 'D 메뉴', desc: '얼큰한 소고기 육개장.' }
           } },
-        { id: 'lunch-e', al: ['eggs', 'soy', 'gluten', 'sesame'], num: 'E', name: 'Bibimbap', ko: '소고기 비빔밥', price: 17.90, img: 'bibimbap-beef', rice: true,
+        { id: 'lunch-e', al: ['eggs', 'soy', 'gluten', 'sesame'], num: 'E', name: 'Bibimbap', ko: '소고기 비빔밥', price: 18, img: 'bibimbap-beef', rice: true,
           t: {
             fr: { title: 'Menu E', desc: 'Bibimbap au bœuf.' },
             en: { title: 'Menu E', desc: 'Beef bibimbap.' },
             de: { title: 'Menü E', desc: 'Bibimbap mit Rindfleisch.' },
             ko: { title: 'E 메뉴', desc: '소고기 비빔밥.' }
           } },
-        { id: 'lunch-f', al: ['fish', 'eggs', 'soy', 'gluten', 'sesame'], num: 'F', name: 'Bibimbap', ko: '연어 비빔밥', price: 17.90, img: 'bibimbap-salmon', rice: true,
+        { id: 'lunch-f', al: ['fish', 'eggs', 'soy', 'gluten', 'sesame'], num: 'F', name: 'Bibimbap', ko: '연어 비빔밥', price: 18, img: 'bibimbap-salmon', rice: true,
           t: {
             fr: { title: 'Menu F', desc: 'Bibimbap au saumon.' },
             en: { title: 'Menu F', desc: 'Salmon bibimbap.' },
             de: { title: 'Menü F', desc: 'Bibimbap mit Lachs.' },
             ko: { title: 'F 메뉴', desc: '연어 비빔밥.' }
           } },
-        { id: 'lunch-g', al: ['eggs', 'soy', 'gluten', 'sesame'], num: 'G', name: 'Bibimbap', ko: '야채 비빔밥', price: 15.90, img: 'bibimbap-veg', veg: true, rice: true,
+        { id: 'lunch-g', al: ['eggs', 'soy', 'gluten', 'sesame'], num: 'G', name: 'Bibimbap', ko: '야채 비빔밥', price: 16, img: 'bibimbap-veg', veg: true, rice: true,
           t: {
             fr: { title: 'Menu G', desc: 'Bibimbap aux légumes.' },
             en: { title: 'Menu G', desc: 'Vegetable bibimbap.' },
@@ -116,35 +116,35 @@ window.MENU_DATA = {
         fr: { title: 'Les entrées' }, en: { title: 'Starters' }, de: { title: 'Vorspeisen' }, ko: { title: '전채 요리' }
       },
       items: [
-        { id: 'gun-mandu', al: ['gluten', 'soy', 'sesame', 'eggs'], num: '1', name: 'Gun Mandu', ko: '군만두', price: 8.90, img: 'gun-mandu',
+        { id: 'gun-mandu', al: ['gluten', 'soy', 'sesame', 'eggs'], num: '1', name: 'Gun Mandu', ko: '군만두', price: 9, img: 'gun-mandu',
           t: {
             fr: { title: 'Raviolis grillés (6 pièces)', desc: 'Raviolis coréens dorés à la poêle, farcis au poulet et aux légumes.' },
             en: { title: 'Grilled dumplings (6 pcs)', desc: 'Pan-fried Korean dumplings filled with chicken and vegetables.' },
             de: { title: 'Gegrillte Teigtaschen (6 Stück)', desc: 'Knusprig gebratene koreanische Teigtaschen mit Hähnchen und Gemüse.' },
             ko: { title: '군만두 (6개)', desc: '닭고기와 채소로 속을 채워 노릇하게 구운 만두.' }
           } },
-        { id: 'gun-mandu-v', al: ['gluten', 'soy', 'sesame'], num: '1v', name: 'Gun Mandu vegi', ko: '야채 군만두', price: 8.90, img: 'gun-mandu', veg: true,
+        { id: 'gun-mandu-v', al: ['gluten', 'soy', 'sesame'], num: '1v', name: 'Gun Mandu vegi', ko: '야채 군만두', price: 9, img: 'gun-mandu', veg: true,
           t: {
             fr: { title: 'Raviolis végétariens (6 pièces)', desc: 'Raviolis grillés farcis aux légumes.' },
             en: { title: 'Vegetarian dumplings (6 pcs)', desc: 'Pan-fried dumplings filled with vegetables.' },
             de: { title: 'Vegetarische Teigtaschen (6 Stück)', desc: 'Gebratene Teigtaschen mit Gemüsefüllung.' },
             ko: { title: '야채 군만두 (6개)', desc: '채소로 속을 채운 군만두.' }
           } },
-        { id: 'haemul-pajeon', al: ['gluten', 'eggs', 'crustaceans', 'molluscs', 'soy', 'sesame'], num: '2', name: 'Haemul Pajeon', ko: '해물파전', price: 11.90, img: 'haemul-pajeon',
+        { id: 'haemul-pajeon', al: ['gluten', 'eggs', 'crustaceans', 'molluscs', 'soy', 'sesame'], num: '2', name: 'Haemul Pajeon', ko: '해물파전', price: 12, img: 'haemul-pajeon',
           t: {
             fr: { title: 'Crêpe aux fruits de mer', desc: 'Grande crêpe coréenne croustillante aux fruits de mer, poivron et ciboulette. À partager.' },
             en: { title: 'Seafood pancake', desc: 'Large crispy Korean pancake with seafood, pepper and chives. Good for sharing.' },
             de: { title: 'Meeresfrüchte-Pfannkuchen', desc: 'Großer knuspriger koreanischer Pfannkuchen mit Meeresfrüchten, Paprika und Schnittlauch. Zum Teilen.' },
             ko: { title: '해물파전', desc: '해물, 고추, 쪽파를 넣어 바삭하게 부친 전. 나눠 드시기 좋아요.' }
           } },
-        { id: 'kimchijeon', al: ['gluten', 'eggs', 'fish', 'crustaceans', 'soy'], num: '3', name: 'Kimchi Jeon', ko: '김치전', price: 8.90, img: 'kimchijeon', spicy: 1,
+        { id: 'kimchijeon', al: ['gluten', 'eggs', 'fish', 'crustaceans', 'soy'], num: '3', name: 'Kimchi Jeon', ko: '김치전', price: 9, img: 'kimchijeon', spicy: 1,
           t: {
             fr: { title: 'Crêpe au kimchi', desc: 'Crêpe croustillante au kimchi (chou fermenté), légèrement piquante.' },
             en: { title: 'Kimchi pancake', desc: 'Crispy pancake with kimchi (fermented cabbage), slightly spicy.' },
             de: { title: 'Kimchi-Pfannkuchen', desc: 'Knuspriger Pfannkuchen mit Kimchi (fermentierter Kohl), leicht scharf.' },
             ko: { title: '김치전', desc: '김치를 넣어 바삭하게 부친 전. 약간 매콤해요.' }
           } },
-        { id: 'dakgangjeong', al: ['gluten', 'soy', 'sesame', 'peanuts'], num: '4', name: 'Dakgangjeong', ko: '닭강정', price: 12.90, img: 'dakgangjeong',
+        { id: 'dakgangjeong', al: ['gluten', 'soy', 'sesame', 'peanuts'], num: '4', name: 'Dakgangjeong', ko: '닭강정', price: 13, img: 'dakgangjeong',
           t: {
             fr: { title: 'Beignets de poulet aigre-doux', desc: 'Poulet frit croustillant, enrobé d’une sauce sucrée-salée façon coréenne.' },
             en: { title: 'Sweet & sour fried chicken', desc: 'Crispy fried chicken glazed with a Korean-style sweet and tangy sauce.' },
@@ -171,28 +171,28 @@ window.MENU_DATA = {
         ko: { title: '식사 메뉴', sub: '공기밥과 반찬 제공 (잡채, 떡볶이, 짜장면 제외)' }
       },
       items: [
-        { id: 'japchae', al: ['soy', 'gluten', 'sesame', 'eggs'], num: '6', name: 'Japchae', ko: '잡채', price: 16.95, img: 'japchae',
+        { id: 'japchae', al: ['soy', 'gluten', 'sesame', 'eggs'], num: '6', name: 'Japchae', ko: '잡채', price: 17, img: 'japchae',
           t: {
             fr: { title: 'Vermicelles sautés au bœuf', desc: 'Vermicelles de patate douce sautés avec de fines lamelles de bœuf et des légumes.' },
             en: { title: 'Stir-fried glass noodles with beef', desc: 'Sweet-potato glass noodles stir-fried with thin slices of beef and vegetables.' },
             de: { title: 'Gebratene Glasnudeln mit Rind', desc: 'Süßkartoffel-Glasnudeln mit Rindfleischstreifen und Gemüse gebraten.' },
             ko: { title: '소고기 잡채', desc: '당면에 얇게 썬 소고기와 채소를 넣어 볶았어요.' }
           } },
-        { id: 'japchae-v', al: ['soy', 'gluten', 'sesame'], num: '6v', name: 'Japchae', ko: '야채 잡채', price: 16.95, img: 'japchae', veg: true,
+        { id: 'japchae-v', al: ['soy', 'gluten', 'sesame'], num: '6v', name: 'Japchae', ko: '야채 잡채', price: 17, img: 'japchae', veg: true,
           t: {
             fr: { title: 'Vermicelles sautés végétariens', desc: 'Vermicelles de patate douce sautés aux légumes.' },
             en: { title: 'Vegetarian glass noodles', desc: 'Sweet-potato glass noodles stir-fried with vegetables.' },
             de: { title: 'Vegetarische Glasnudeln', desc: 'Süßkartoffel-Glasnudeln mit Gemüse gebraten.' },
             ko: { title: '야채 잡채', desc: '당면과 채소를 함께 볶았어요.' }
           } },
-        { id: 'tteokbokki', al: ['gluten', 'soy', 'crustaceans', 'molluscs', 'fish'], num: '7', name: 'Haemul Tteokbokki', ko: '해물떡볶이', price: 20.95, img: 'tteokbokki', spicy: 2,
+        { id: 'tteokbokki', al: ['gluten', 'soy', 'crustaceans', 'molluscs', 'fish'], num: '7', name: 'Haemul Tteokbokki', ko: '해물떡볶이', price: 21, img: 'tteokbokki', spicy: 2,
           t: {
             fr: { title: 'Gâteaux de riz aux fruits de mer', desc: 'Bâtonnets de riz moelleux et fruits de mer sautés à la sauce piquante.' },
             en: { title: 'Rice cakes with seafood', desc: 'Chewy rice cake sticks and seafood stir-fried in a hot, spicy sauce.' },
             de: { title: 'Reiskuchen mit Meeresfrüchten', desc: 'Weiche Reiskuchen-Stäbchen mit Meeresfrüchten in scharfer Sauce gebraten.' },
             ko: { title: '해물떡볶이', desc: '쫄깃한 떡과 해물을 매콤한 양념에 볶았어요.' }
           } },
-        { id: 'ojingeo-bokkeum', al: ['molluscs', 'gluten', 'soy', 'sesame'], num: '8', name: 'Ojingeo Bokkeum', ko: '오징어볶음', price: 19.95, img: 'ojingeo-bokkeum', spicy: 2, rice: true,
+        { id: 'ojingeo-bokkeum', al: ['molluscs', 'gluten', 'soy', 'sesame'], num: '8', name: 'Ojingeo Bokkeum', ko: '오징어볶음', price: 20, img: 'ojingeo-bokkeum', spicy: 2, rice: true,
           t: {
             fr: { title: 'Seiche sautée piquante', desc: 'Seiche sautée aux légumes dans une sauce piquante.' },
             en: { title: 'Spicy stir-fried squid', desc: 'Squid stir-fried with vegetables in a spicy sauce.' },
@@ -206,28 +206,28 @@ window.MENU_DATA = {
             de: { title: 'Kimchi', desc: 'Fermentierter Chinakohl mit Chili, die berühmte koreanische Beilage.' },
             ko: { title: '김치', desc: '한국의 대표 반찬, 배추김치.' }
           } },
-        { id: 'jajangmyeon', al: ['gluten', 'soy'], num: '10', name: 'Jajangmyeon', ko: '짜장면', price: 16.95, img: 'jajangmyeon',
+        { id: 'jajangmyeon', al: ['gluten', 'soy'], num: '10', name: 'Jajangmyeon', ko: '짜장면', price: 17, img: 'jajangmyeon',
           t: {
             fr: { title: 'Nouilles sauce soja noire', desc: 'Nouilles de blé nappées d’une sauce à la pâte de soja noir et au porc haché.' },
             en: { title: 'Black bean noodles', desc: 'Wheat noodles topped with a black soybean paste sauce and minced pork.' },
             de: { title: 'Nudeln mit schwarzer Bohnensauce', desc: 'Weizennudeln mit Sauce aus schwarzer Sojapaste und Schweinehackfleisch.' },
             ko: { title: '짜장면', desc: '춘장 소스와 다진 돼지고기를 얹은 면 요리.' }
           } },
-        { id: 'bulgogi', al: ['soy', 'gluten', 'sesame'], num: '20', name: 'Bulgogi', ko: '불고기', price: 20.95, img: 'bulgogi', rice: true,
+        { id: 'bulgogi', al: ['soy', 'gluten', 'sesame'], num: '20', name: 'Bulgogi', ko: '불고기', price: 21, img: 'bulgogi', rice: true,
           t: {
             fr: { title: 'Bœuf mariné grillé', desc: 'Fines tranches de bœuf dans une marinade sucrée-salée, cuites sur le feu. Le grand classique, non piquant.' },
             en: { title: 'Marinated beef', desc: 'Thin slices of beef in a sweet-savoury marinade, cooked over the flame. The great classic, not spicy.' },
             de: { title: 'Mariniertes Rindfleisch', desc: 'Fein geschnittenes Rindfleisch in süß-würziger Marinade, über der Flamme gebraten. Der Klassiker, nicht scharf.' },
             ko: { title: '불고기', desc: '달콤짭짤한 양념에 재운 얇은 소고기를 불에 구웠어요. 맵지 않은 대표 메뉴.' }
           } },
-        { id: 'dakgalbi', al: ['soy', 'gluten', 'sesame'], num: '21', name: 'Dakgalbi', ko: '닭갈비', price: 20.95, img: 'dakgalbi', spicy: 2, rice: true,
+        { id: 'dakgalbi', al: ['soy', 'gluten', 'sesame'], num: '21', name: 'Dakgalbi', ko: '닭갈비', price: 21, img: 'dakgalbi', spicy: 2, rice: true,
           t: {
             fr: { title: 'Poulet sauté piquant', desc: 'Cuisse de poulet émincée sautée aux champignons, sauce piquante.' },
             en: { title: 'Spicy stir-fried chicken', desc: 'Sliced chicken thigh stir-fried with button mushrooms in a spicy sauce.' },
             de: { title: 'Scharf gebratenes Hähnchen', desc: 'Geschnetzelte Hähnchenkeule mit Champignons in scharfer Sauce gebraten.' },
             ko: { title: '닭갈비', desc: '닭다리살과 양송이버섯을 매콤한 양념에 볶았어요.' }
           } },
-        { id: 'jeyuk-bokkeum', al: ['soy', 'gluten', 'sesame'], num: '22', name: 'Jeyuk Bokkeum', ko: '제육볶음', price: 20.95, img: 'jeyuk-bokkeum', spicy: 2, rice: true,
+        { id: 'jeyuk-bokkeum', al: ['soy', 'gluten', 'sesame'], num: '22', name: 'Jeyuk Bokkeum', ko: '제육볶음', price: 21, img: 'jeyuk-bokkeum', spicy: 2, rice: true,
           t: {
             fr: { title: 'Porc sauté piquant', desc: 'Poitrine de porc sautée aux champignons dans une sauce piquante.' },
             en: { title: 'Spicy stir-fried pork', desc: 'Pork belly stir-fried with button mushrooms in a hot, spicy sauce.' },
@@ -253,49 +253,49 @@ window.MENU_DATA = {
         ko: '테이블 가운데 그릴에서 고기를 구워 드세요. 상추에 고기와 쌈장, 반찬을 올려 한입에 쌈을 즐겨보세요!'
       },
       items: [
-        { id: 'bbq-beef', al: ['soy', 'gluten', 'sesame'], num: '23', name: 'So Deungsim', ko: '소고기 등심', price: 23.9, img: 'bbq-beef', two: true, rice: true,
+        { id: 'bbq-beef', al: ['soy', 'gluten', 'sesame'], num: '23', name: 'So Deungsim', ko: '소고기 등심', price: 24, img: 'bbq-beef', two: true, rice: true,
           t: {
             fr: { title: 'Barbecue bœuf (entrecôte)', desc: 'Entrecôte de bœuf à griller à table.' },
             en: { title: 'Beef barbecue (rib-eye)', desc: 'Beef rib-eye to grill at your table.' },
             de: { title: 'Rindfleisch-Barbecue (Entrecôte)', desc: 'Rinder-Entrecôte zum Grillen am Tisch.' },
             ko: { title: '소고기 등심 구이', desc: '테이블에서 구워 먹는 소고기 등심.' }
           } },
-        { id: 'bbq-lamb', al: ['soy', 'gluten', 'sesame'], num: '26', name: 'Yang Gogi', ko: '양고기 구이', price: 23.9, img: 'bbq-lamb', two: true, rice: true,
+        { id: 'bbq-lamb', al: ['soy', 'gluten', 'sesame'], num: '26', name: 'Yang Gogi', ko: '양고기 구이', price: 24, img: 'bbq-lamb', two: true, rice: true,
           t: {
             fr: { title: 'Barbecue agneau', desc: 'Agneau mariné à griller à table.' },
             en: { title: 'Lamb barbecue', desc: 'Marinated lamb to grill at your table.' },
             de: { title: 'Lamm-Barbecue', desc: 'Mariniertes Lammfleisch zum Grillen am Tisch.' },
             ko: { title: '양고기 구이', desc: '테이블에서 구워 먹는 양념 양고기.' }
           } },
-        { id: 'bbq-pork', al: ['soy', 'gluten', 'sesame'], num: '27', name: 'Dwaeji Gogi', ko: '돼지고기 구이', price: 20.9, img: 'bbq-pork', two: true, rice: true,
+        { id: 'bbq-pork', al: ['soy', 'gluten', 'sesame'], num: '27', name: 'Dwaeji Gogi', ko: '돼지고기 구이', price: 21, img: 'bbq-pork', two: true, rice: true,
           t: {
             fr: { title: 'Barbecue porc', desc: 'Porc mariné à griller à table.' },
             en: { title: 'Pork barbecue', desc: 'Marinated pork to grill at your table.' },
             de: { title: 'Schweinefleisch-Barbecue', desc: 'Mariniertes Schweinefleisch zum Grillen am Tisch.' },
             ko: { title: '돼지고기 구이', desc: '테이블에서 구워 먹는 양념 돼지고기.' }
           } },
-        { id: 'samgyeopsal', al: ['sesame', 'soy', 'gluten'], num: '28', name: 'Samgyeopsal', ko: '삼겹살', price: 21.9, img: 'samgyeopsal', two: true, rice: true,
+        { id: 'samgyeopsal', al: ['sesame', 'soy', 'gluten'], num: '28', name: 'Samgyeopsal', ko: '삼겹살', price: 22, img: 'samgyeopsal', two: true, rice: true,
           t: {
             fr: { title: 'Poitrine de porc grillée', desc: 'Tranches épaisses de poitrine de porc nature, le barbecue préféré des Coréens.' },
             en: { title: 'Grilled pork belly', desc: 'Thick slices of plain pork belly, Korea’s favourite barbecue.' },
             de: { title: 'Gegrillter Schweinebauch', desc: 'Dicke Scheiben Schweinebauch natur, das Lieblings-Barbecue der Koreaner.' },
             ko: { title: '삼겹살', desc: '한국인이 가장 사랑하는 바비큐, 두툼한 삼겹살.' }
           } },
-        { id: 'bbq-duck', al: ['soy', 'gluten', 'sesame'], num: '29', name: 'Ori Gogi', ko: '오리 가슴살 구이', price: 24.9, img: 'bbq-duck', two: true, rice: true,
+        { id: 'bbq-duck', al: ['soy', 'gluten', 'sesame'], num: '29', name: 'Ori Gogi', ko: '오리 가슴살 구이', price: 25, img: 'bbq-duck', two: true, rice: true,
           t: {
             fr: { title: 'Barbecue magret de canard', desc: 'Magret de canard en tranches à griller à table.' },
             en: { title: 'Duck breast barbecue', desc: 'Sliced duck breast to grill at your table.' },
             de: { title: 'Entenbrust-Barbecue', desc: 'Entenbrust in Scheiben zum Grillen am Tisch.' },
             ko: { title: '오리 가슴살 구이', desc: '테이블에서 구워 먹는 오리 가슴살.' }
           } },
-        { id: 'bbq-shrimp', al: ['crustaceans', 'sesame', 'soy', 'gluten'], num: '30', name: 'Saeu Gui', ko: '새우 구이', price: 25.9, img: 'bbq-shrimp', two: true, rice: true,
+        { id: 'bbq-shrimp', al: ['crustaceans', 'sesame', 'soy', 'gluten'], num: '30', name: 'Saeu Gui', ko: '새우 구이', price: 26, img: 'bbq-shrimp', two: true, rice: true,
           t: {
             fr: { title: 'Barbecue de crevettes (10–12 pièces)', desc: 'Crevettes à griller à table.' },
             en: { title: 'Shrimp barbecue (10–12 pcs)', desc: 'Shrimps to grill at your table.' },
             de: { title: 'Garnelen-Barbecue (10–12 Stück)', desc: 'Garnelen zum Grillen am Tisch.' },
             ko: { title: '새우 구이 (10~12마리)', desc: '테이블에서 구워 먹는 새우.' }
           } },
-        { id: 'bbq-chicken', al: ['soy', 'gluten', 'sesame'], num: '31', name: 'Dak Gui', ko: '닭고기 구이', price: 21.9, img: 'bbq-chicken', two: true, rice: true,
+        { id: 'bbq-chicken', al: ['soy', 'gluten', 'sesame'], num: '31', name: 'Dak Gui', ko: '닭고기 구이', price: 22, img: 'bbq-chicken', two: true, rice: true,
           t: {
             fr: { title: 'Barbecue poulet (cuisse)', desc: 'Cuisse de poulet marinée à griller à table.' },
             en: { title: 'Chicken barbecue (thigh)', desc: 'Marinated chicken thigh to grill at your table.' },
@@ -321,28 +321,28 @@ window.MENU_DATA = {
         ko: '비빔밥: 밥 위에 나물과 재료를 올렸어요. 고추장을 취향껏 넣고 잘 비벼 드세요. 돌솥이 뜨거우니 조심하세요. 바닥의 누룽지도 별미예요!'
       },
       items: [
-        { id: 'bibimbap-seafood', al: ['crustaceans', 'molluscs', 'eggs', 'soy', 'gluten', 'sesame'], num: '32', name: 'Haemul Bibimbap', ko: '해물 비빔밥', price: 22.9, img: 'bibimbap-seafood',
+        { id: 'bibimbap-seafood', al: ['crustaceans', 'molluscs', 'eggs', 'soy', 'gluten', 'sesame'], num: '32', name: 'Haemul Bibimbap', ko: '해물 비빔밥', price: 23, img: 'bibimbap-seafood',
           t: {
             fr: { title: 'Bibimbap aux fruits de mer', desc: 'Riz, légumes et fruits de mer dans un bol de pierre chaude.' },
             en: { title: 'Seafood bibimbap', desc: 'Rice, vegetables and seafood in a hot stone bowl.' },
             de: { title: 'Bibimbap mit Meeresfrüchten', desc: 'Reis, Gemüse und Meeresfrüchte im heißen Steintopf.' },
             ko: { title: '해물 돌솥 비빔밥', desc: '밥, 나물, 해물을 뜨거운 돌솥에 담았어요.' }
           } },
-        { id: 'bibimbap-beef', al: ['eggs', 'soy', 'gluten', 'sesame'], num: '33', name: 'Sogogi Bibimbap', ko: '소고기 비빔밥', price: 21.9, img: 'bibimbap-beef',
+        { id: 'bibimbap-beef', al: ['eggs', 'soy', 'gluten', 'sesame'], num: '33', name: 'Sogogi Bibimbap', ko: '소고기 비빔밥', price: 22, img: 'bibimbap-beef',
           t: {
             fr: { title: 'Bibimbap au bœuf', desc: 'Riz, légumes et bœuf dans un bol de pierre chaude.' },
             en: { title: 'Beef bibimbap', desc: 'Rice, vegetables and beef in a hot stone bowl.' },
             de: { title: 'Bibimbap mit Rindfleisch', desc: 'Reis, Gemüse und Rindfleisch im heißen Steintopf.' },
             ko: { title: '소고기 돌솥 비빔밥', desc: '밥, 나물, 소고기를 뜨거운 돌솥에 담았어요.' }
           } },
-        { id: 'bibimbap-salmon', al: ['fish', 'eggs', 'soy', 'gluten', 'sesame'], num: '34', name: 'Yeoneo Bibimbap', ko: '연어 비빔밥', price: 21.9, img: 'bibimbap-salmon',
+        { id: 'bibimbap-salmon', al: ['fish', 'eggs', 'soy', 'gluten', 'sesame'], num: '34', name: 'Yeoneo Bibimbap', ko: '연어 비빔밥', price: 22, img: 'bibimbap-salmon',
           t: {
             fr: { title: 'Bibimbap au saumon', desc: 'Riz, légumes et saumon dans un bol de pierre chaude.' },
             en: { title: 'Salmon bibimbap', desc: 'Rice, vegetables and salmon in a hot stone bowl.' },
             de: { title: 'Bibimbap mit Lachs', desc: 'Reis, Gemüse und Lachs im heißen Steintopf.' },
             ko: { title: '연어 돌솥 비빔밥', desc: '밥, 나물, 연어를 뜨거운 돌솥에 담았어요.' }
           } },
-        { id: 'bibimbap-veg', al: ['eggs', 'soy', 'gluten', 'sesame'], num: '35', name: 'Yachae Bibimbap', ko: '야채 비빔밥', price: 16.9, img: 'bibimbap-veg', veg: true,
+        { id: 'bibimbap-veg', al: ['eggs', 'soy', 'gluten', 'sesame'], num: '35', name: 'Yachae Bibimbap', ko: '야채 비빔밥', price: 17, img: 'bibimbap-veg', veg: true,
           t: {
             fr: { title: 'Bibimbap végétarien', desc: 'Riz et mélange de légumes de saison dans un bol de pierre chaude.' },
             en: { title: 'Vegetarian bibimbap', desc: 'Rice and mixed seasonal vegetables in a hot stone bowl.' },
@@ -362,14 +362,14 @@ window.MENU_DATA = {
         ko: { title: '찌개 · 탕', sub: '공기밥과 반찬이 함께 제공됩니다' }
       },
       items: [
-        { id: 'dubu-jjigae', al: ['soy', 'gluten', 'fish', 'crustaceans'], num: '37', name: 'Dubu Jjigae', ko: '두부찌개', price: 17.9, img: 'dubu-jjigae', spicy: 2, rice: true,
+        { id: 'dubu-jjigae', al: ['soy', 'gluten', 'fish', 'crustaceans'], num: '37', name: 'Dubu Jjigae', ko: '두부찌개', price: 18, img: 'dubu-jjigae', spicy: 2, rice: true,
           t: {
             fr: { title: 'Ragoût de tofu piquant', desc: 'Ragoût au tofu dans un bouillon relevé au piment.' },
             en: { title: 'Spicy tofu stew', desc: 'Tofu stew in a chili-spiced broth.' },
             de: { title: 'Scharfer Tofu-Eintopf', desc: 'Tofu-Eintopf in einer würzigen Chilibrühe.' },
             ko: { title: '두부찌개', desc: '얼큰한 국물에 두부를 넣고 끓인 찌개.' }
           } },
-        { id: 'yukgaejang', al: ['soy', 'gluten', 'sesame', 'eggs'], num: '38', name: 'Yukgaejang', ko: '육개장', price: 20.9, img: 'yukgaejang', spicy: 2, rice: true,
+        { id: 'yukgaejang', al: ['soy', 'gluten', 'sesame', 'eggs'], num: '38', name: 'Yukgaejang', ko: '육개장', price: 21, img: 'yukgaejang', spicy: 2, rice: true,
           t: {
             fr: { title: 'Ragoût de bœuf piquant', desc: 'Soupe-ragoût de bœuf effiloché et légumes, bien relevée.' },
             en: { title: 'Spicy beef stew', desc: 'Hearty stew of shredded beef and vegetables in a spicy broth.' },

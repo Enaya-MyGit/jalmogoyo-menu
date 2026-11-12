@@ -23,11 +23,11 @@
       order: 'Pour commander, indiquez simplement le numéro <b>{n}</b> à votre serveur.',
       allergens: 'Tableau des allergènes disponible sur demande.',
       none: 'Aucun plat ne correspond à ce filtre. Demandez conseil à notre équipe : certains plats peuvent parfois être adaptés.',
-      infoHoursT: 'Horaires', infoHours: 'Du lundi au samedi<br>Midi 12h00 – 14h00 · Soir 19h00 – 22h00<br>Fermé le dimanche',
+      infoHoursT: 'Horaires', infoHours: 'Du mardi au samedi<br>Midi 12h00 – 14h00 · Soir 19h00 – 22h00<br>Fermé le dimanche et le lundi',
       infoRiceT: 'Riz & petits mets', infoRice: 'Les « banchan » sont de petits accompagnements coréens servis avec les plats, à partager. Bol de riz supplémentaire : 2,80 €.',
       infoAllergT: 'Allergènes', infoAllerg: 'Tableau des allergènes sur demande. N’hésitez pas à demander conseil à notre équipe.',
       infoTakeT: 'À emporter', infoTake: 'Commandes à emporter par téléphone : {phone}<br>{address}',
-      welcomeHours: 'Ouvert du lundi au samedi · 12h00 – 14h00 · 19h00 – 22h00'
+      welcomeHours: 'Ouvert du mardi au samedi · 12h00 – 14h00 · 19h00 – 22h00'
     },
     en: {
       perPerson: '/ person', perPersonLong: 'per person', spicyOnly: 'Spicy',
@@ -41,11 +41,11 @@
       order: 'To order, simply tell your waiter number <b>{n}</b>.',
       allergens: 'Allergen information available on request.',
       none: 'No dish matches this filter. Please ask our team: some dishes can sometimes be adapted.',
-      infoHoursT: 'Opening hours', infoHours: 'Monday to Saturday<br>Lunch 12:00 – 14:00 · Dinner 19:00 – 22:00<br>Closed on Sunday',
+      infoHoursT: 'Opening hours', infoHours: 'Tuesday to Saturday<br>Lunch 12:00 – 14:00 · Dinner 19:00 – 22:00<br>Closed on Sunday and Monday',
       infoRiceT: 'Rice & side dishes', infoRice: '“Banchan” are small Korean side dishes served with your meal, to share. Extra bowl of rice: €2.80.',
       infoAllergT: 'Allergens', infoAllerg: 'Allergen chart available on request. Feel free to ask our team for advice.',
       infoTakeT: 'Take-away', infoTake: 'Take-away orders by phone: {phone}<br>{address}',
-      welcomeHours: 'Open Monday to Saturday · 12:00 – 14:00 · 19:00 – 22:00'
+      welcomeHours: 'Open Tuesday to Saturday · 12:00 – 14:00 · 19:00 – 22:00'
     },
     de: {
       perPerson: '/ Pers.', perPersonLong: 'pro Person', spicyOnly: 'Scharf',
@@ -59,11 +59,11 @@
       order: 'Zum Bestellen nennen Sie Ihrer Bedienung einfach die Nummer <b>{n}</b>.',
       allergens: 'Allergenliste auf Anfrage erhältlich.',
       none: 'Kein Gericht entspricht diesem Filter. Fragen Sie unser Team: Manche Gerichte können angepasst werden.',
-      infoHoursT: 'Öffnungszeiten', infoHours: 'Montag bis Samstag<br>Mittags 12:00 – 14:00 · Abends 19:00 – 22:00<br>Sonntag Ruhetag',
+      infoHoursT: 'Öffnungszeiten', infoHours: 'Dienstag bis Samstag<br>Mittags 12:00 – 14:00 · Abends 19:00 – 22:00<br>Sonntag und Montag Ruhetag',
       infoRiceT: 'Reis & Beilagen', infoRice: '„Banchan“ sind kleine koreanische Beilagen zum Teilen, die zu den Gerichten serviert werden. Extra Schale Reis: 2,80 €.',
       infoAllergT: 'Allergene', infoAllerg: 'Allergenliste auf Anfrage. Unser Team berät Sie gerne.',
       infoTakeT: 'Zum Mitnehmen', infoTake: 'Bestellungen zum Mitnehmen per Telefon: {phone}<br>{address}',
-      welcomeHours: 'Geöffnet Montag bis Samstag · 12:00 – 14:00 · 19:00 – 22:00'
+      welcomeHours: 'Geöffnet Dienstag bis Samstag · 12:00 – 14:00 · 19:00 – 22:00'
     },
     ko: {
       perPerson: '/ 1인', perPersonLong: '1인 기준', spicyOnly: '매운 메뉴',
@@ -77,11 +77,11 @@
       order: '주문하실 때 직원에게 <b>{n}</b>번이라고 말씀해 주세요.',
       allergens: '알레르기 정보는 요청 시 제공됩니다.',
       none: '조건에 맞는 메뉴가 없습니다. 직원에게 문의해 주세요. 일부 메뉴는 조정이 가능할 수 있습니다.',
-      infoHoursT: '영업시간', infoHours: '월요일 ~ 토요일<br>점심 12:00 – 14:00 · 저녁 19:00 – 22:00<br>일요일 휴무',
+      infoHoursT: '영업시간', infoHours: '화요일 ~ 토요일<br>점심 12:00 – 14:00 · 저녁 19:00 – 22:00<br>일요일 · 월요일 휴무',
       infoRiceT: '공기밥 · 반찬', infoRice: '식사에는 함께 나눠 드시는 반찬이 제공됩니다. 공기밥 추가: 2.80€.',
       infoAllergT: '알레르기', infoAllerg: '알레르기 정보표는 요청 시 보여 드립니다. 편하게 직원에게 문의해 주세요.',
       infoTakeT: '포장 주문', infoTake: '전화 포장 주문: {phone}<br>{address}',
-      welcomeHours: '월~토 영업 · 12:00 – 14:00 · 19:00 – 22:00'
+      welcomeHours: '화~토 영업 · 12:00 – 14:00 · 19:00 – 22:00'
     }
   };
 

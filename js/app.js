@@ -457,6 +457,15 @@
 
   // Offline cache when served over http(s) (PWA install). Not used inside the Android app.
   if ('serviceWorker' in navigator && /^https?:/.test(location.protocol)) {
-    navigator.serviceWorker.register('sw.js').catch(function () {});
+    navigator.serviceWorker.register('sw.js', { updateViaCache: 'none' }).then(function (reg) {
+      if (reg.update) reg.update();
+    }).catch(function () {});
+    // when a new version of the app takes over, reload once to show it
+    var reloaded = false;
+    navigator.serviceWorker.addEventListener('controllerchange', function () {
+      if (reloaded) return;
+      reloaded = true;
+      location.reload();
+    });
   }
 })();

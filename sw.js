@@ -1,5 +1,6 @@
-/* Offline cache for the PWA version. Bump CACHE when the menu changes. */
-var CACHE = 'jalmogoyo-menu-v5';
+/* Offline cache for the PWA version.
+ * Network first: when online the latest version is always shown; the cache is only used offline. */
+var CACHE = 'jalmogoyo-menu-v6';
 var FILES = [
   "css/app.css",
   "img/brand/crane-cream.png",
@@ -57,5 +58,16 @@ self.addEventListener('activate', function (e) {
   }).then(function () { return self.clients.claim(); }));
 });
 self.addEventListener('fetch', function (e) {
-  e.respondWith(caches.match(e.request, { ignoreSearch: true }).then(function (r) { return r || fetch(e.request); }));
+  if (e.request.method !== 'GET') return;
+  e.respondWith(
+    fetch(e.request, { cache: 'no-cache' }).then(function (res) {
+      if (res && res.ok) {
+        var copy = res.clone();
+        caches.open(CACHE).then(function (c) { c.put(e.request, copy); });
+      }
+      return res;
+    }).catch(function () {
+      return caches.match(e.request, { ignoreSearch: true });
+    })
+  );
 });

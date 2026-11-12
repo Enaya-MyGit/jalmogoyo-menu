@@ -1,5 +1,5 @@
 /* Offline cache for the PWA version. Bump CACHE when the menu changes. */
-var CACHE = 'jalmogoyo-menu-v1';
+var CACHE = 'jalmogoyo-menu-v2';
 var FILES = [
   "css/app.css",
   "img/brand/crane-cream.png",

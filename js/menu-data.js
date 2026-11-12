@@ -424,9 +424,9 @@ window.MENU_DATA = {
           t: { fr: { title: 'Ricard' }, en: { title: 'Ricard (pastis)' }, de: { title: 'Ricard (Pastis)' }, ko: { title: '리카르 (파스티스)' } } },
         { id: 'd-ricard2', size: '2 cl', price: 4.50,
           t: { fr: { title: 'Ricard tomate (grenadine) – Ricard perroquet (menthe)' }, en: { title: 'Ricard with grenadine or mint syrup' }, de: { title: 'Ricard mit Grenadine- oder Minzsirup' }, ko: { title: '리카르 + 석류 시럽 또는 민트 시럽' } } },
-        { id: 'd-martini', size: '4 cl', price: 6.50,
+        { id: 'd-martini', size: '4 cl', price: 6,
           t: { fr: { title: 'Martini (rouge / blanc)' }, en: { title: 'Martini (red / white)' }, de: { title: 'Martini (rot / weiß)' }, ko: { title: '마티니 (로쏘 / 비앙코)' } } },
-        { id: 'd-whisky', size: '4 cl', price: 7.50,
+        { id: 'd-whisky', size: '4 cl', price: 7,
           t: { fr: { title: 'Whisky (Jack Daniel’s)' }, en: { title: 'Whisky (Jack Daniel’s)' }, de: { title: 'Whisky (Jack Daniel’s)' }, ko: { title: '위스키 (잭 다니엘)' } } },
         { id: 'd-supp', size: '', price: 0.30,
           t: { fr: { title: '+ Supplément sirop / rondelle de citron' }, en: { title: '+ Extra syrup / lemon slice' }, de: { title: '+ Extra Sirup / Zitronenscheibe' }, ko: { title: '+ 시럽 / 레몬 추가' } } }
@@ -450,12 +450,12 @@ window.MENU_DATA = {
         { id: 's-icetea', size: '25 cl', price: 3.70, t: { fr: { title: 'Ice Tea' }, en: { title: 'Iced tea' }, de: { title: 'Eistee' }, ko: { title: '아이스티' } } },
         { id: 's-tonic', size: '25 cl', price: 3.90, t: { fr: { title: 'Schweppes Tonic' }, en: { title: 'Schweppes Tonic' }, de: { title: 'Schweppes Tonic' }, ko: { title: '슈웹스 토닉' } } },
         { id: 's-limonade', size: '25 cl', price: 3.70, t: { fr: { title: 'Limonade' }, en: { title: 'Lemonade' }, de: { title: 'Limonade' }, ko: { title: '레모네이드' } } },
-        { id: 's-diabolo', size: '25 cl', price: 4.50, t: { fr: { title: 'Diabolo', desc: 'Limonade + sirop au choix' }, en: { title: 'Diabolo', desc: 'Lemonade with a syrup of your choice' }, de: { title: 'Diabolo', desc: 'Limonade mit Sirup nach Wahl' }, ko: { title: '디아볼로', desc: '레모네이드 + 원하는 시럽' } } },
-        { id: 's-juice', size: '25 cl', price: 4.50, t: { fr: { title: 'Jus de fruits', desc: 'Orange, pomme, abricot, tomate, mangue, cannelle' }, en: { title: 'Fruit juice', desc: 'Orange, apple, apricot, tomato, mango, cinnamon' }, de: { title: 'Fruchtsaft', desc: 'Orange, Apfel, Aprikose, Tomate, Mango, Zimt' }, ko: { title: '과일 주스', desc: '오렌지, 사과, 살구, 토마토, 망고, 시나몬' } } },
+        { id: 's-diabolo', size: '25 cl', price: 4, t: { fr: { title: 'Diabolo', desc: 'Limonade + sirop au choix' }, en: { title: 'Diabolo', desc: 'Lemonade with a syrup of your choice' }, de: { title: 'Diabolo', desc: 'Limonade mit Sirup nach Wahl' }, ko: { title: '디아볼로', desc: '레모네이드 + 원하는 시럽' } } },
+        { id: 's-juice', size: '25 cl', price: 4, t: { fr: { title: 'Jus de fruits', desc: 'Orange, pomme, abricot, tomate, mangue, cannelle' }, en: { title: 'Fruit juice', desc: 'Orange, apple, apricot, tomato, mango, cinnamon' }, de: { title: 'Fruchtsaft', desc: 'Orange, Apfel, Aprikose, Tomate, Mango, Zimt' }, ko: { title: '과일 주스', desc: '오렌지, 사과, 살구, 토마토, 망고, 시나몬' } } },
         { id: 's-aloe', size: '25 cl', price: 5, korean: true, t: { fr: { title: 'Jus d’aloe vera' }, en: { title: 'Aloe vera drink' }, de: { title: 'Aloe-Vera-Saft' }, ko: { title: '알로에 주스' } } },
         { id: 's-sirop', size: '25 cl', price: 2.80, t: { fr: { title: 'Sirop à l’eau « Monin »', desc: 'Pêche, violette, grenadine, fraise, menthe, citron' }, en: { title: 'Syrup with water (Monin)', desc: 'Peach, violet, grenadine, strawberry, mint, lemon' }, de: { title: 'Sirup mit Wasser (Monin)', desc: 'Pfirsich, Veilchen, Grenadine, Erdbeere, Minze, Zitrone' }, ko: { title: '시럽 워터 (모닌)', desc: '복숭아, 바이올렛, 석류, 딸기, 민트, 레몬' } } },
         { id: 's-tea', size: '', price: 3.50, korean: true, t: { fr: { title: 'Thé', desc: 'Blé, jasmin, vert, menthe, verveine · supplément eau + 2 €' }, en: { title: 'Tea', desc: 'Grain (barley), jasmine, green, mint, verbena · extra hot water + €2' }, de: { title: 'Tee', desc: 'Getreide (Gerste), Jasmin, Grün, Minze, Verbene · extra Wasser + 2 €' }, ko: { title: '차', desc: '보리차, 자스민차, 녹차, 민트차, 버베나차 · 물 추가 +2€' } } },
-        { id: 's-espresso', size: '', price: 2.50, t: { fr: { title: 'Expresso – Déca' }, en: { title: 'Espresso – Decaf' }, de: { title: 'Espresso – Entkoffeiniert' }, ko: { title: '에스프레소 · 디카페인' } } },
+        { id: 's-espresso', size: '', price: 2, t: { fr: { title: 'Expresso – Déca' }, en: { title: 'Espresso – Decaf' }, de: { title: 'Espresso – Entkoffeiniert' }, ko: { title: '에스프레소 · 디카페인' } } },
         { id: 's-creme', size: '', price: 2.50, t: { fr: { title: 'Café crème' }, en: { title: 'Coffee with milk' }, de: { title: 'Milchkaffee' }, ko: { title: '카페 크렘 (밀크 커피)' } } }
       ]
     }

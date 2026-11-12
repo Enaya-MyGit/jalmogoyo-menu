@@ -15,7 +15,7 @@
 
   <!-- ===================== WELCOME / LANGUAGE ===================== -->
   <section id="welcome" class="welcome" aria-label="Welcome">
-    <div class="petals petals--dark" aria-hidden="true"></div>
+    <div class="welcome__petals" aria-hidden="true"><i class="pt pt--tr"></i><i class="pt pt--bl"></i></div>
     <div class="welcome__inner">
       <img class="welcome__crane" src="img/brand/crane-cream.png" alt="">
       <img class="welcome__logo" src="img/brand/logo.png" alt="Jalmogoyo – Restaurant coréen – 잘 먹어요">
@@ -43,15 +43,18 @@
       <div class="side__langs" id="side-langs"></div>
     </aside>
 
+    <div class="main-wrap">
+    <div class="bg-petals" aria-hidden="true"><i class="pt pt--tr"></i><i class="pt pt--bl"></i></div>
     <main class="main" id="main">
-      <div class="petals" aria-hidden="true"></div>
       <div class="toolbar" id="toolbar">
         <div class="filters" id="filters"></div>
         <div class="legend" id="legend"></div>
       </div>
+      <div id="banner"></div>
       <div id="sections"></div>
       <footer class="info" id="info"></footer>
     </main>
+    </div>
   </div>
 
   <!-- ===================== DISH DETAIL ===================== -->
@@ -61,6 +64,22 @@
       <button class="modal__close" data-close aria-label="Fermer">&times;</button>
       <div class="modal__img" id="modal-img"></div>
       <div class="modal__body" id="modal-body"></div>
+    </article>
+  </div>
+
+  <!-- ===================== ALLERGEN PICKER ===================== -->
+  <div class="modal" id="allergen-panel" hidden>
+    <div class="modal__backdrop" data-close-al></div>
+    <article class="al-panel" role="dialog" aria-modal="true">
+      <button class="modal__close" data-close-al aria-label="Fermer">&times;</button>
+      <h2 class="al-panel__title" id="al-title"></h2>
+      <p class="al-panel__sub" id="al-sub"></p>
+      <div class="al-grid" id="al-grid"></div>
+      <p class="al-panel__warn" id="al-warn"></p>
+      <div class="al-panel__actions">
+        <button class="btn btn--ghost" id="al-clear"></button>
+        <button class="btn btn--red" id="al-ok" data-close-al></button>
+      </div>
     </article>
   </div>
 

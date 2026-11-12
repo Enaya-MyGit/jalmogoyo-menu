@@ -36,17 +36,14 @@ img { -webkit-user-drag: none; }
 button { font: inherit; color: inherit; border: 0; background: none; cursor: pointer; padding: 0; }
 [hidden] { display: none !important; }
 
-/* ---------- decorative petals ---------- */
-.petals {
-  position: absolute; left: 0; right: 0; top: 0; height: 190px; pointer-events: none; z-index: 0;
-  background-image: var(--petal), var(--petal), var(--petal), var(--petal), var(--petal), var(--petal), var(--petal), var(--petal);
-  background-repeat: no-repeat;
-  background-size: 70px, 38px, 54px, 28px, 90px, 44px, 60px, 32px;
-  background-position: 2% 10px, 9% 70px, 18% 18px, 31% 60px, 72% -14px, 82% 70px, 93% 8px, 99% 110px;
-  opacity: .55;
-}
-.petals--dark { height: 100%; opacity: .07; position: fixed; background-size: 120px, 60px, 90px, 50px, 140px, 70px, 100px, 54px;
-  background-position: 3% 6%, 14% 30%, 8% 82%, 28% 92%, 88% 4%, 76% 26%, 94% 70%, 70% 94%; }
+/* ---------- decorative petals (taken from the printed menu) ---------- */
+.pt { position: absolute; display: block; background: url("../img/brand/petals.png") no-repeat; background-size: contain; pointer-events: none; }
+.bg-petals { position: absolute; top: 0; left: 0; right: 0; bottom: 0; overflow: hidden; pointer-events: none; z-index: 0; }
+.bg-petals .pt--tr { top: 70px; right: -40px; width: 62%; max-width: 760px; height: 420px; background-position: top right; opacity: .30; }
+.bg-petals .pt--bl { bottom: -30px; left: -30px; width: 40%; max-width: 480px; height: 280px; background-position: top right; transform: rotate(180deg); opacity: .22; }
+.welcome__petals .pt { background-image: url("../img/brand/petals-cream.png"); }
+.welcome__petals .pt--tr { top: -10px; right: -30px; width: 58%; height: 52%; background-position: top right; opacity: .10; }
+.welcome__petals .pt--bl { bottom: -20px; left: -30px; width: 46%; height: 42%; background-position: top right; transform: rotate(180deg); opacity: .07; }
 
 /* =================== WELCOME =================== */
 .welcome {
@@ -59,6 +56,7 @@ button { font: inherit; color: inherit; border: 0; background: none; cursor: poi
   transition: opacity .45s ease;
 }
 .welcome.is-leaving { opacity: 0; pointer-events: none; }
+.welcome__petals { position: absolute; top: 0; left: 0; right: 0; bottom: 0; pointer-events: none; }
 .welcome__inner { position: relative; z-index: 1; display: flex; flex-direction: column; align-items: center; padding: 24px; }
 .welcome__crane { width: min(46vw, 420px); width: 42vmin; max-width: 440px; animation: glide 6s ease-in-out infinite; filter: drop-shadow(0 10px 30px rgba(0,0,0,.6)); }
 .welcome__logo { width: 50vmin; max-width: 520px; margin-top: 2vmin; }
@@ -86,6 +84,7 @@ button { font: inherit; color: inherit; border: 0; background: none; cursor: poi
 
 /* =================== APP LAYOUT =================== */
 .app { display: flex; height: 100vh; height: 100dvh; background: var(--paper); }
+.main-wrap { position: relative; flex: 1; min-width: 0; min-height: 0; }
 
 .side {
   width: var(--side-w); flex: 0 0 var(--side-w);
@@ -109,13 +108,13 @@ button { font: inherit; color: inherit; border: 0; background: none; cursor: poi
 .side-lang { padding: 6px; border-radius: 8px; opacity: .55; display: flex; flex-direction: column; align-items: center; gap: 4px; font-size: 12px; color: var(--cream); }
 .side-lang.is-active { opacity: 1; background: #262626; }
 
-.main { position: relative; flex: 1; overflow-y: auto; overflow-x: hidden; -webkit-overflow-scrolling: touch; scroll-behavior: smooth; }
+.main { position: absolute; top: 0; left: 0; right: 0; bottom: 0; z-index: 1; overflow-y: auto; overflow-x: hidden; -webkit-overflow-scrolling: touch; scroll-behavior: smooth; }
 
 /* toolbar: filters + legend */
 .toolbar {
   position: sticky; top: 0; z-index: 5;
   display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 10px 20px;
-  padding: 12px 28px; background: rgba(253,252,248,.94);
+  padding: 12px 28px; background: rgba(253,252,248,.9);
   border-bottom: 1px solid var(--line);
   -webkit-backdrop-filter: blur(6px); backdrop-filter: blur(6px);
 }
@@ -143,9 +142,9 @@ button { font: inherit; color: inherit; border: 0; background: none; cursor: poi
   max-width: 880px; margin: 18px auto 0; padding: 14px 20px 14px 56px; position: relative;
   background: var(--cream-2); border-radius: 12px; font-size: 16px; line-height: 1.5; color: #3d3b33;
 }
-.section__intro::before { content: ""; position: absolute; left: 16px; top: 14px; width: 26px; height: 26px; background: var(--petal) center/contain no-repeat; filter: brightness(.8); }
+.section__intro::before { content: ""; position: absolute; left: 16px; top: 14px; width: 26px; height: 26px; background: url("../img/brand/petal-one.png") center/contain no-repeat; }
 .section__note { text-align: center; color: var(--grey); font-size: 13px; margin: 16px 0 0; }
-.divider { height: 26px; margin: 18px auto 0; max-width: 700px; background: var(--petal) center/24px no-repeat, linear-gradient(90deg, transparent, transparent) ; position: relative; }
+.divider { height: 26px; margin: 18px auto 0; max-width: 700px; background: url("../img/brand/petal-one.png") center/22px no-repeat; position: relative; }
 .divider::before, .divider::after { content: ""; position: absolute; top: 50%; width: calc(50% - 22px); border-top: 2px dotted #cfc9b2; }
 .divider::before { left: 0; } .divider::after { right: 0; }
 
@@ -252,3 +251,28 @@ button { font: inherit; color: inherit; border: 0; background: none; cursor: poi
   .section { padding-left: 14px; padding-right: 14px; }
   .lang-btn { min-width: 0; }
 }
+
+/* =================== FILTERS, PER-PERSON, ALLERGENS =================== */
+.chip--al.is-on { background: var(--red); border-color: var(--red); color: #fff; }
+.chip__count { display: inline-flex; align-items: center; justify-content: center; min-width: 22px; height: 22px; border-radius: 11px; background: #fff; color: var(--red); font-size: 13px; font-weight: 700; padding: 0 6px; }
+.per { font-size: .55em; color: var(--grey-2); font-weight: 400; margin-left: 4px; }
+.m-price .per { font-size: .45em; }
+.banner { position: relative; z-index: 1; margin: 18px 28px 0; padding: 12px 16px; border-radius: 12px; background: #fff3f3; border: 1px solid #f3c4c6; color: #6d1014; font-size: 15px; display: flex; gap: 12px; align-items: center; justify-content: space-between; flex-wrap: wrap; }
+.banner b { font-weight: 600; }
+.banner button { padding: 8px 14px; border-radius: 999px; background: var(--red); color: #fff; font-size: 14px; }
+.m-al { margin-top: 16px; font-size: 15px; color: #3d3b33; }
+.m-al b { display: block; font-size: 13px; text-transform: uppercase; letter-spacing: .06em; color: var(--grey); margin-bottom: 6px; font-weight: 600; }
+.al-tag { display: inline-block; margin: 0 6px 6px 0; padding: 5px 10px; border-radius: 8px; background: #fff; border: 1px solid #e0d9c0; font-size: 14px; }
+.al-panel { position: relative; width: 100%; max-width: 860px; max-height: 92vh; overflow-y: auto; background: var(--paper); border-radius: 22px; padding: 30px 30px 24px; animation: pop .25s ease; }
+.al-panel__title { margin: 0 60px 4px 0; font-weight: 500; font-size: 28px; color: var(--red); }
+.al-panel__sub { margin: 0 0 18px; color: var(--grey-2); font-size: 16px; }
+.al-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 10px; }
+.al-btn { display: flex; align-items: center; gap: 10px; padding: 14px 14px; border-radius: 12px; border: 1.5px solid #d6d0b8; background: #fff; font-size: 17px; text-align: left; }
+.al-btn .box { flex: 0 0 22px; width: 22px; height: 22px; border-radius: 6px; border: 2px solid #bdb59a; display: inline-flex; align-items: center; justify-content: center; color: #fff; font-size: 15px; line-height: 1; }
+.al-btn.is-on { border-color: var(--red); background: #fff3f3; }
+.al-btn.is-on .box { background: var(--red); border-color: var(--red); }
+.al-panel__warn { margin: 18px 0 0; font-size: 14px; color: var(--grey-2); line-height: 1.45; }
+.al-panel__actions { display: flex; justify-content: flex-end; gap: 12px; margin-top: 18px; }
+.btn { padding: 14px 24px; border-radius: 999px; font-size: 17px; }
+.btn--ghost { border: 1.5px solid #d6d0b8; background: #fff; }
+.btn--red { background: var(--red); color: #fff; }

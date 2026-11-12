@@ -12,12 +12,17 @@
   /* ------------------------------------------------------------------ */
   var UI = {
     fr: {
+      perPerson: '/ pers.', perPersonLong: 'par personne', spicyOnly: 'Piquant',
+      allergens_btn: 'Allergènes', alTitle: 'Allergies ou intolérances ?', alSub: 'Touchez ce que vous ne pouvez pas manger : les plats qui en contiennent seront masqués.',
+      alWarn: 'Information indicative. Les recettes, sauces et petits mets peuvent contenir d’autres allergènes ou des traces. En cas d’allergie, signalez-la toujours à votre serveur.',
+      alClear: 'Tout effacer', alOk: 'Voir les plats', alHidden: 'Plats masqués car ils contiennent :', alReset: 'Effacer le filtre',
+      alDish: 'Allergènes (indicatif)',
       veg: 'Végétarien', notSpicy: 'Non piquant', spicy: 'Piquant', slightly: 'Légèrement piquant',
       two: 'Pour 2 pers. minimum', twoShort: '2 pers.', rice: 'Riz & petits mets inclus',
       details: 'Détails', korean: 'Corée', home: 'Accueil',
       order: 'Pour commander, indiquez simplement le numéro <b>{n}</b> à votre serveur.',
       allergens: 'Tableau des allergènes disponible sur demande.',
-      none: 'Aucun plat ne correspond à ce filtre.',
+      none: 'Aucun plat ne correspond à ce filtre. Demandez conseil à notre équipe : certains plats peuvent parfois être adaptés.',
       infoHoursT: 'Horaires', infoHours: 'Du lundi au samedi<br>Midi 12h00 – 14h00 · Soir 19h00 – 22h00<br>Fermé le dimanche',
       infoRiceT: 'Riz & petits mets', infoRice: 'Les « banchan » sont de petits accompagnements coréens servis avec les plats, à partager. Bol de riz supplémentaire : 2,80 €.',
       infoAllergT: 'Allergènes', infoAllerg: 'Tableau des allergènes sur demande. N’hésitez pas à demander conseil à notre équipe.',
@@ -25,12 +30,17 @@
       welcomeHours: 'Ouvert du lundi au samedi · 12h00 – 14h00 · 19h00 – 22h00'
     },
     en: {
+      perPerson: '/ person', perPersonLong: 'per person', spicyOnly: 'Spicy',
+      allergens_btn: 'Allergens', alTitle: 'Allergies or intolerances?', alSub: 'Tap what you cannot eat: dishes containing it will be hidden.',
+      alWarn: 'For guidance only. Recipes, sauces and side dishes may contain other allergens or traces. If you have an allergy, always tell your waiter.',
+      alClear: 'Clear all', alOk: 'Show dishes', alHidden: 'Dishes hidden because they contain:', alReset: 'Clear filter',
+      alDish: 'Allergens (for guidance)',
       veg: 'Vegetarian', notSpicy: 'Not spicy', spicy: 'Spicy', slightly: 'Slightly spicy',
       two: 'Minimum 2 persons', twoShort: '2 pers.', rice: 'Rice & side dishes included',
       details: 'Details', korean: 'Korea', home: 'Home',
       order: 'To order, simply tell your waiter number <b>{n}</b>.',
       allergens: 'Allergen information available on request.',
-      none: 'No dish matches this filter.',
+      none: 'No dish matches this filter. Please ask our team: some dishes can sometimes be adapted.',
       infoHoursT: 'Opening hours', infoHours: 'Monday to Saturday<br>Lunch 12:00 – 14:00 · Dinner 19:00 – 22:00<br>Closed on Sunday',
       infoRiceT: 'Rice & side dishes', infoRice: '“Banchan” are small Korean side dishes served with your meal, to share. Extra bowl of rice: €2.80.',
       infoAllergT: 'Allergens', infoAllerg: 'Allergen chart available on request. Feel free to ask our team for advice.',
@@ -38,12 +48,17 @@
       welcomeHours: 'Open Monday to Saturday · 12:00 – 14:00 · 19:00 – 22:00'
     },
     de: {
+      perPerson: '/ Pers.', perPersonLong: 'pro Person', spicyOnly: 'Scharf',
+      allergens_btn: 'Allergene', alTitle: 'Allergien oder Unverträglichkeiten?', alSub: 'Tippen Sie an, was Sie nicht essen dürfen: Gerichte, die es enthalten, werden ausgeblendet.',
+      alWarn: 'Angaben ohne Gewähr. Rezepte, Saucen und Beilagen können weitere Allergene oder Spuren enthalten. Bitte informieren Sie bei einer Allergie immer Ihre Bedienung.',
+      alClear: 'Alles löschen', alOk: 'Gerichte anzeigen', alHidden: 'Ausgeblendet, da enthalten:', alReset: 'Filter löschen',
+      alDish: 'Allergene (ohne Gewähr)',
       veg: 'Vegetarisch', notSpicy: 'Nicht scharf', spicy: 'Scharf', slightly: 'Leicht scharf',
       two: 'Ab 2 Personen', twoShort: '2 Pers.', rice: 'Reis & Beilagen inklusive',
       details: 'Details', korean: 'Korea', home: 'Start',
       order: 'Zum Bestellen nennen Sie Ihrer Bedienung einfach die Nummer <b>{n}</b>.',
       allergens: 'Allergenliste auf Anfrage erhältlich.',
-      none: 'Kein Gericht entspricht diesem Filter.',
+      none: 'Kein Gericht entspricht diesem Filter. Fragen Sie unser Team: Manche Gerichte können angepasst werden.',
       infoHoursT: 'Öffnungszeiten', infoHours: 'Montag bis Samstag<br>Mittags 12:00 – 14:00 · Abends 19:00 – 22:00<br>Sonntag Ruhetag',
       infoRiceT: 'Reis & Beilagen', infoRice: '„Banchan“ sind kleine koreanische Beilagen zum Teilen, die zu den Gerichten serviert werden. Extra Schale Reis: 2,80 €.',
       infoAllergT: 'Allergene', infoAllerg: 'Allergenliste auf Anfrage. Unser Team berät Sie gerne.',
@@ -51,12 +66,17 @@
       welcomeHours: 'Geöffnet Montag bis Samstag · 12:00 – 14:00 · 19:00 – 22:00'
     },
     ko: {
+      perPerson: '/ 1인', perPersonLong: '1인 기준', spicyOnly: '매운 메뉴',
+      allergens_btn: '알레르기', alTitle: '알레르기나 못 드시는 음식이 있나요?', alSub: '드실 수 없는 재료를 선택하면 해당 재료가 들어간 메뉴가 숨겨집니다.',
+      alWarn: '참고용 정보입니다. 양념, 소스, 반찬에 다른 알레르기 유발 성분이 들어 있을 수 있습니다. 알레르기가 있으시면 꼭 직원에게 말씀해 주세요.',
+      alClear: '모두 지우기', alOk: '메뉴 보기', alHidden: '다음 성분이 들어 있어 숨긴 메뉴:', alReset: '필터 해제',
+      alDish: '알레르기 성분 (참고용)',
       veg: '채식', notSpicy: '안 매운 메뉴', spicy: '매운맛', slightly: '약간 매운맛',
       two: '2인 이상 주문', twoShort: '2인', rice: '공기밥 · 반찬 포함',
       details: '자세히', korean: '한국', home: '처음으로',
       order: '주문하실 때 직원에게 <b>{n}</b>번이라고 말씀해 주세요.',
       allergens: '알레르기 정보는 요청 시 제공됩니다.',
-      none: '조건에 맞는 메뉴가 없습니다.',
+      none: '조건에 맞는 메뉴가 없습니다. 직원에게 문의해 주세요. 일부 메뉴는 조정이 가능할 수 있습니다.',
       infoHoursT: '영업시간', infoHours: '월요일 ~ 토요일<br>점심 12:00 – 14:00 · 저녁 19:00 – 22:00<br>일요일 휴무',
       infoRiceT: '공기밥 · 반찬', infoRice: '식사에는 함께 나눠 드시는 반찬이 제공됩니다. 공기밥 추가: 2.80€.',
       infoAllergT: '알레르기', infoAllerg: '알레르기 정보표는 요청 시 보여 드립니다. 편하게 직원에게 문의해 주세요.',
@@ -64,6 +84,15 @@
       welcomeHours: '월~토 영업 · 12:00 – 14:00 · 19:00 – 22:00'
     }
   };
+
+  var ALLERGENS = ['gluten', 'crustaceans', 'eggs', 'fish', 'peanuts', 'soy', 'milk', 'nuts', 'celery', 'mustard', 'sesame', 'sulphites', 'lupin', 'molluscs'];
+  var AL_NAMES = {
+    fr: { gluten: 'Gluten (blé)', crustaceans: 'Crustacés (crevettes…)', eggs: 'Œufs', fish: 'Poissons', peanuts: 'Arachides', soy: 'Soja', milk: 'Lait', nuts: 'Fruits à coque', celery: 'Céleri', mustard: 'Moutarde', sesame: 'Sésame', sulphites: 'Sulfites', lupin: 'Lupin', molluscs: 'Mollusques (seiche, calamar…)' },
+    en: { gluten: 'Gluten (wheat)', crustaceans: 'Crustaceans (shrimp…)', eggs: 'Eggs', fish: 'Fish', peanuts: 'Peanuts', soy: 'Soy', milk: 'Milk', nuts: 'Tree nuts', celery: 'Celery', mustard: 'Mustard', sesame: 'Sesame', sulphites: 'Sulphites', lupin: 'Lupin', molluscs: 'Molluscs (squid…)' },
+    de: { gluten: 'Gluten (Weizen)', crustaceans: 'Krebstiere (Garnelen…)', eggs: 'Eier', fish: 'Fisch', peanuts: 'Erdnüsse', soy: 'Soja', milk: 'Milch', nuts: 'Schalenfrüchte', celery: 'Sellerie', mustard: 'Senf', sesame: 'Sesam', sulphites: 'Sulfite', lupin: 'Lupinen', molluscs: 'Weichtiere (Tintenfisch…)' },
+    ko: { gluten: '글루텐 (밀)', crustaceans: '갑각류 (새우 등)', eggs: '달걀', fish: '생선', peanuts: '땅콩', soy: '대두 (콩)', milk: '우유', nuts: '견과류', celery: '셀러리', mustard: '겨자', sesame: '참깨', sulphites: '아황산염', lupin: '루핀', molluscs: '연체류 (오징어 등)' }
+  };
+  function alName(k) { return (AL_NAMES[state.lang] || AL_NAMES.fr)[k]; }
 
   /* ------------------------------------------------------------------ */
   /* Icons (inline SVG)                                                 */
@@ -91,7 +120,7 @@
   /* ------------------------------------------------------------------ */
   /* State & helpers                                                    */
   /* ------------------------------------------------------------------ */
-  var state = { lang: 'fr', filter: { veg: false, notSpicy: false } };
+  var state = { lang: 'fr', filter: { veg: false, notSpicy: false, spicy: false }, allergens: {} };
   var $ = function (sel, root) { return (root || document).querySelector(sel); };
   var $$ = function (sel, root) { return Array.prototype.slice.call((root || document).querySelectorAll(sel)); };
 
@@ -122,6 +151,11 @@
     }).join(' / ');
   }
 
+  function priceHtml(d) {
+    return fmtPrice(d.price) + (d.two ? '<span class="per">' + esc(ui('perPerson')) + '</span>' : '');
+  }
+  function activeAllergens() { return ALLERGENS.filter(function (k) { return state.allergens[k]; }); }
+
   function imgUrl(name) { return 'img/dishes/' + name + '.jpg'; }
 
   /* ------------------------------------------------------------------ */
@@ -141,9 +175,12 @@
   }
 
   function renderToolbar() {
+    var nAl = activeAllergens().length;
     $('#filters').innerHTML =
       '<button class="chip' + (state.filter.veg ? ' is-on' : '') + '" data-filter="veg">' + SVG_LEAF + esc(ui('veg')) + '</button>' +
-      '<button class="chip' + (state.filter.notSpicy ? ' is-on' : '') + '" data-filter="notSpicy">' + esc(ui('notSpicy')) + '</button>';
+      '<button class="chip' + (state.filter.spicy ? ' is-on' : '') + '" data-filter="spicy">' + SVG_CHILI + esc(ui('spicyOnly')) + '</button>' +
+      '<button class="chip' + (state.filter.notSpicy ? ' is-on' : '') + '" data-filter="notSpicy">' + esc(ui('notSpicy')) + '</button>' +
+      '<button class="chip chip--al' + (nAl ? ' is-on' : '') + '" id="al-open">' + esc(ui('allergens_btn')) + (nAl ? ' <span class="chip__count">' + nAl + '</span>' : '') + '</button>';
     $('#legend').innerHTML =
       '<span>' + SVG_CHILI + esc(ui('spicy')) + '</span>' +
       '<span>' + SVG_LEAF + esc(ui('veg')) + '</span>' +
@@ -169,7 +206,7 @@
       '<div class="card__body">' +
         '<div class="card__name">' + esc(d.name) + ' <span class="card__ko" lang="ko">' + esc(d.ko) + '</span></div>' +
         '<div class="card__title">' + esc(d._cat.showDesc ? t.title + ' — ' + t.desc : t.title) + '</div>' +
-        '<div class="card__foot"><span class="price">' + fmtPrice(d.price) + '</span>' +
+        '<div class="card__foot"><span class="price">' + priceHtml(d) + '</span>' +
         (d.rice ? '<span class="more">' + SVG_RICE + '</span>' : '<span class="more"></span>') + '</div>' +
       '</div></button>';
   }
@@ -187,16 +224,19 @@
   function matches(d) {
     if (state.filter.veg && !d.veg) return false;
     if (state.filter.notSpicy && d.spicy) return false;
+    if (state.filter.spicy && !d.spicy) return false;
+    var al = d.al || [];
+    for (var i = 0; i < al.length; i++) if (state.allergens[al[i]]) return false;
     return true;
   }
 
   function renderSections() {
-    var filtering = state.filter.veg || state.filter.notSpicy;
+    var filtering = state.filter.veg || state.filter.notSpicy || state.filter.spicy;
     var html = DATA.categories.map(function (c) {
       var t = tr(c.t);
       var body;
       if (c.drinks) {
-        if (filtering && state.filter.veg) return '';
+        if (filtering) return '';
         body = '<div class="drinks">' + c.items.map(drinkHtml).join('') + '</div>';
       } else {
         var items = c.items.filter(matches);
@@ -213,6 +253,12 @@
     }).join('');
     if (!html) html = '<p class="section section__sub">' + esc(ui('none')) + '</p>';
     $('#sections').innerHTML = html;
+
+    var act = activeAllergens();
+    $('#banner').innerHTML = act.length
+      ? '<div class="banner"><span>' + esc(ui('alHidden')) + ' <b>' + act.map(function (k) { return esc(alName(k)); }).join(', ') + '</b>. ' + esc(ui('alWarn')) + '</span>' +
+        '<button id="al-reset">' + esc(ui('alReset')) + '</button></div>'
+      : '';
 
     // hide nav entries whose section is filtered out
     $$('.nav-btn').forEach(function (b) {
@@ -261,12 +307,29 @@
       '<div class="m-title">' + esc(t.title) + '</div>' +
       '<p class="m-desc">' + esc(t.desc) + '</p>' +
       '<div class="m-tags">' + tagsHtml(d, true) + '</div>' +
-      '<div class="price m-price">' + fmtPrice(d.price) + '</div>' +
+      '<div class="price m-price">' + priceHtml(d) + '</div>' +
+      (d.al && d.al.length ? '<div class="m-al"><b>' + esc(ui('alDish')) + '</b>' + d.al.map(function (k) { return '<span class="al-tag">' + esc(alName(k)) + '</span>'; }).join('') + '</div>' : '') +
       '<div class="m-order"><div><span class="num">' + esc(d.num) + '</span><span>' + ui('order').replace('{n}', esc(d.num)) + '</span></div>' +
       '<p class="m-allerg">' + esc(ui('allergens')) + '</p></div>';
     $('#modal').hidden = false;
   }
   function closeDish() { $('#modal').hidden = true; }
+
+  function renderAllergenPanel() {
+    $('#al-title').textContent = ui('alTitle');
+    $('#al-sub').textContent = ui('alSub');
+    $('#al-warn').textContent = ui('alWarn');
+    $('#al-clear').textContent = ui('alClear');
+    $('#al-ok').textContent = ui('alOk');
+    $('#al-grid').innerHTML = ALLERGENS.map(function (k) {
+      return '<button class="al-btn' + (state.allergens[k] ? ' is-on' : '') + '" data-al="' + k + '"><span class="box">' + (state.allergens[k] ? '✓' : '') + '</span>' + esc(alName(k)) + '</button>';
+    }).join('');
+  }
+  function openAllergens() { renderAllergenPanel(); $('#allergen-panel').hidden = false; }
+  function closeAllergens() {
+    $('#allergen-panel').hidden = true;
+    renderToolbar(); renderSections(); updateActiveNav();
+  }
 
   /* ------------------------------------------------------------------ */
   /* Navigation & scroll spy                                            */
@@ -300,7 +363,8 @@
   /* ------------------------------------------------------------------ */
   function start(lang) {
     state.lang = LANGS.indexOf(lang) >= 0 ? lang : 'fr';
-    state.filter.veg = state.filter.notSpicy = false;
+    state.filter.veg = state.filter.notSpicy = state.filter.spicy = false;
+    state.allergens = {};
     renderAll();
     $('#app').hidden = false;
     $('#main').scrollTop = 0;
@@ -311,6 +375,7 @@
 
   function goHome() {
     closeDish();
+    $('#allergen-panel').hidden = true;
     $('#welcome').hidden = false;
     $('#main').scrollTop = 0;
   }
@@ -325,9 +390,19 @@
   /* Events                                                             */
   /* ------------------------------------------------------------------ */
   document.addEventListener('click', function (e) {
-    var el = e.target.closest ? e.target.closest('button, [data-close]') : null;
+    var el = e.target.closest ? e.target.closest('button, [data-close], [data-close-al]') : null;
     if (!el) return;
     if (el.hasAttribute('data-close')) { closeDish(); return; }
+    if (el.hasAttribute('data-close-al')) { closeAllergens(); return; }
+    if (el.id === 'al-open') { openAllergens(); return; }
+    if (el.id === 'al-clear') { state.allergens = {}; renderAllergenPanel(); return; }
+    if (el.id === 'al-reset') { state.allergens = {}; renderToolbar(); renderSections(); updateActiveNav(); return; }
+    if (el.classList.contains('al-btn')) {
+      var k = el.getAttribute('data-al');
+      state.allergens[k] = !state.allergens[k];
+      renderAllergenPanel();
+      return;
+    }
     if (el.classList.contains('lang-btn')) { start(el.getAttribute('data-lang')); return; }
     if (el.classList.contains('side-lang')) {
       var y = $('#main').scrollTop;
@@ -341,6 +416,8 @@
     if (el.classList.contains('chip')) {
       var f = el.getAttribute('data-filter');
       state.filter[f] = !state.filter[f];
+      if (f === 'spicy' && state.filter.spicy) state.filter.notSpicy = false;
+      if (f === 'notSpicy' && state.filter.notSpicy) state.filter.spicy = false;
       renderToolbar(); renderSections(); updateActiveNav();
       return;
     }
@@ -362,6 +439,7 @@
   // Android back button (called by the native wrapper)
   window.handleBack = function () {
     if (!$('#modal').hidden) { closeDish(); return true; }
+    if (!$('#allergen-panel').hidden) { closeAllergens(); return true; }
     if ($('#welcome').hidden) { goHome(); return true; }
     return true; // never leave the app from the welcome screen
   };

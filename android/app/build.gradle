@@ -1,0 +1,38 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    namespace 'com.jalmogoyo.menu'
+    compileSdk 34
+
+    defaultConfig {
+        applicationId 'com.jalmogoyo.menu'
+        minSdk 21          // Android 5.0+ : covers older Samsung Galaxy Tab A models
+        targetSdk 34
+        versionCode 1
+        versionName '1.0'
+        setProperty('archivesBaseName', 'jalmogoyo-menu')
+    }
+
+    sourceSets {
+        main {
+            // The web menu (../../www) is packaged as-is inside the APK -> works fully offline.
+            // -PwebDir=... lets CI point to another copy of the web menu
+            assets.srcDirs = [project.findProperty('webDir') ?: '../../www']
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            // Signed with the debug key so the APK can be installed directly on the tablet.
+            signingConfig signingConfigs.debug
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
